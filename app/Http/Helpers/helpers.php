@@ -3,6 +3,7 @@
 // membuat helper format uang
 function format_uang($angka)
 {
+    // membuat pemisah ribuan dengan titik
     return number_format($angka, 0, ',', '.');
 }
 
