@@ -12,6 +12,8 @@ class Kategori extends Model
     // model kategori terkoneksi ke table kategori
     protected $table = 'kategori';
 
+    protected $primaryKey = 'id_kategori';
+
     // menjaga table saat proses insert data
     protected $guarded = [];
 }
