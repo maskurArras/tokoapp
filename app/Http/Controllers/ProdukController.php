@@ -138,6 +138,7 @@ class ProdukController extends Controller
         return response(null, 204);
     }
 
+    // delete multiple data
     public function deleteSelected(Request $request)
     {
         foreach ($request->id_produk as $id) {

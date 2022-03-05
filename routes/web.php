@@ -35,6 +35,7 @@ Route::group(['middleware' => 'auth'], function () {
 
     // route CRUD Produk
     Route::get('/produk/data', [ProdukController::class, 'data'])->name('produk.data');
+    // delete produk multiple
     Route::post('/produk/delete-selected', [ProdukController::class, 'deleteSelected'])->name('produk.delete_selected');
     Route::post('/produk/cetak-barcode', [ProdukController::class, 'cetakBarcode'])->name('produk.cetak_barcode');
     Route::resource('/produk', ProdukController::class);
