@@ -14,6 +14,8 @@
     </style>
 </head>
 
+{{-- cetak barcode --}}
+
 <body>
     <table width="100%">
         <tr>

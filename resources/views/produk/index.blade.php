@@ -17,7 +17,6 @@ Daftar Produk
                 <div class="btn-group">
                     <button onclick="addForm('{{ route('produk.store') }}')" class="btn btn-success btn-xs btn-flat"><i
                             class="fa fa-plus-circle"></i> Tambah</button>
-                    {{-- deleted multiple --}}
                     <button onclick="deleteSelected('{{ route('produk.delete_selected') }}')"
                         class="btn btn-danger btn-xs btn-flat"><i class="fa fa-trash"></i> Hapus</button>
                     <button onclick="cetakBarcode('{{ route('produk.cetak_barcode') }}')"
@@ -95,7 +94,6 @@ Daftar Produk
             }
         });
 
-        // membuat checkbox terselect all semua
         $('[name=select_all]').on('click', function () {
             $(':checkbox').prop('checked', this.checked);
         });
